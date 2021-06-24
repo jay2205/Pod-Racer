@@ -1,4 +1,4 @@
-# Welcome to the One and only UdaciRacer Simulation Game
+# Welcome to the One and only Pod-Racer Game
 
 ## Project Introduction
 

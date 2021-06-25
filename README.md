@@ -1,4 +1,4 @@
-# Welcome to the One and only UdaciRacer Simulation Game
+# Welcome to the One and only Pod-Racer Game
 
 ## Project Introduction
 
@@ -14,9 +14,9 @@ The game has three main views:
 
 ## Code
 
-1. An API. The API is provided in the form of a binary held in the bin folder. You never need to open the binary file, as there are no edits you can make to it. Your work will be 100% in the front end.
+1. An API. The API is provided in the form of a binary held in the bin folder. This work will be 100% in the front end.
 
-2. HTML Views. The focus of this course is not UI development or styling practice, so we have already provided you with pieces of UI, all you have to do is call them at the right times.
+2. HTML Views. The focus of this Project is not UI development or styling practice, so I am working already provided pieces of UI, all I have did is to call them at the right times.
 
 ## Getting Started
 

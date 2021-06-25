@@ -1,7 +1,7 @@
 // PROVIDED CODE BELOW (LINES 1 - 80) DO NOT REMOVE
 
 // The store will hold all information needed globally
-var store = {
+const store = {
   track_id: undefined,
   player_id: undefined,
   race_id: undefined,
@@ -247,7 +247,7 @@ function renderRaceStartView(track, racers) {
 	`;
 }
 
-function resultsView(positions) {
+function resultsView(positions, status) {
   positions.sort((a, b) => (a.final_position > b.final_position ? 1 : -1));
 
   return `
@@ -255,7 +255,7 @@ function resultsView(positions) {
 			<h1>Race Results</h1>
 		</header>
 		<main>
-			${raceProgress(positions)}
+			${raceProgress(positions, status)}
 			<a class= "button" href="/race">Start a new race</a>
 		</main>
 	`;
@@ -263,7 +263,7 @@ function resultsView(positions) {
 
 function raceProgress(positions, status) {
   const { player_id } = store;
-  let userPlayer = positions.find((e) => e.id === parseInt(player_id));
+  const userPlayer = positions.find((e) => e.id === parseInt(player_id));
   userPlayer.driver_name += " (you)";
   positions = positions.sort((a, b) => (a.segment > b.segment ? -1 : 1));
   let count = 1;
@@ -276,7 +276,7 @@ function raceProgress(positions, status) {
 				</td>
 			</tr>
 		`;
-  });
+  }).join(' ');
 
   return `
 		<main>
